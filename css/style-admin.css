@@ -1,0 +1,74 @@
+/* ie, firefox, googlechrome, ... */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	width: 1000px;
+	margin: auto;
+}
+
+#top{
+	height: 100px;
+	background: #00CC66;
+	text-align: center;
+	line-height: 100px;
+}
+
+#search{
+	margin-top: 30px;
+}
+
+#menu{
+	margin-top: 15px;	
+}
+
+#menu li{
+	float: left;
+	width: 499px;
+	border-right: 1px solid #FFF;
+	text-align: center;
+	line-height: 30px;
+	background: #00CC66;
+}
+
+#menu a{
+	color: #FFF;
+	font-weight: bold;
+}
+
+#menu ul{
+	list-style-type: none;/*Bỏ đi các chấm tròn ở thanh menu*/
+}
+
+#txtsearch{
+	border: 1px solid #d1d1d1;
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+}
+
+#duoi table{
+	border-collapse: collapse;/*Chỉ sử dụng cho table để tạo đường viền*/
+	margin-top: 30px;
+	width: 1000px;
+	text-align: center;
+}
+
+#duoi table tr{
+	border: 1px solid #0C6; /*Định dạng đường viền cho dòng*/
+	line-height: 25px; /*Tăng chiều cao cho dòng*/
+}
+
+#duoi table td{
+	border: 1px solid #0C6; /*Định dạng đường viền cho cột*/
+}
+
+#bottom{
+	height: 40px;
+	line-height: 40px;
+	background: #00CC66;
+	text-align: center;
+	color: #FFF;
+	margin-top: 10px;
+}

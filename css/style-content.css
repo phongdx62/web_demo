@@ -1,0 +1,162 @@
+*{margin:0;padding: 0; box-sizing: border-box;}
+
+.body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	
+	
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin:30px 0;
+
+
+}
+
+.content > .box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	box-sizing: border-box;
+	
+	flex-grow: 1;
+	box-shadow: 0px 0px 5px rgba(0,0,0, .1);
+	transition: all .4s ease;
+	
+}
+
+.box:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 0px 10px rgba(0,0,0, .8);
+}
+
+.avatar > img {
+	width: 300px;
+	height: 200px;
+}
+
+.box > .name {
+	color: #000;
+	line-height: 2rem;
+	font-weight: bold;
+}
+
+.box > .singer {
+	color: rgb(0,0,0, .7);
+	
+	font-size: .8rem;
+	line-height: 1rem;
+}
+
+.box > .social {
+
+	width: 50%;
+	margin-top: .8rem;
+	display: flex;
+	justify-content: space-around;
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+
+.social > a{
+	color: #000;
+	transition: all 0.4s ease;
+}
+
+.social > a:hover {
+	transform: rotate(360deg) scale(1.35);
+}
+
+.social > a:nth-child(1):hover {
+	color: #0033FF;
+}
+.social > a:nth-child(2):hover {
+	color: #00FFFF;
+}
+.social > a:nth-child(3):hover {
+	color: #6600CC;
+}
+
+
+.box:hover .social{
+	opacity: 1;
+}
+
+.box:hover .avatar img {
+	animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (max-width: 600px){
+	.box {
+		width: calc(100%);
+	}
+}
+
+@media (min-width: 601px){
+	.box {
+		width: calc(100% / 2);
+	}
+}
+
+@media (min-width: 992px){
+	.box {
+		width: calc(100% / 4);
+	}
+}

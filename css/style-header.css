@@ -1,0 +1,25 @@
+*{margin:0;padding: 0; box-sizing: border-box;}
+
+a.navbar-brand.mx-4, i.fas.fa-circle {
+	transition: all 0.4s ease;
+}
+
+a.navbar-brand.mx-4:hover {
+    color: #16e58a;
+}
+
+a.navbar-brand.mx-4:hover i.fas.fa-circle {
+	color: #16e58a;
+}
+
+button.btn.btn-outline-success.my-2.my-sm-0 {
+	transition: all 0.4s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40,167,69,1);
+}
+
+form.form-inline.my-2.my-lg-0 {
+    margin: 0 110px;
+}
